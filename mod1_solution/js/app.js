@@ -5,19 +5,19 @@
 
   LunchCheckController.$inject = ['$scope'];
   function LunchCheckController ($scope) {
-    $scope.footTypes = ""
+    $scope.foodtypes = ""
     $scope.message = "";
     $scope.checkLunchTypes = function() {
-      $scope.footTypes = $scope.footTypes.trim();
+      $scope.foodtypes = $scope.foodtypes.trim();
 
-      if ($scope.footTypes === "") {
-        $scope.message = "Please enter data first.";
+      if ($scope.foodtypes === "") {
+        $scope.message = "Please Enter Data First.";
         $scope.noticeType = "danger";
       }
       else {
-        var $footTypesArray = $scope.footTypes.split(",");
-        var $length = $footTypesArray.length;
-        if ( ($length <= 3) || ($length == 4 && $footTypesArray[3].trim() === "") ) {
+        var $foodTypesArray = $scope.foodtypes.split(",");
+        var $length = $foodTypesArray.length;
+        if ( ($length <= 3) || ($length == 4 && $foodTypesArray[3].trim() === "") ) {
           $scope.message = "Enjoy!";
           $scope.noticeType = "success";
         }
