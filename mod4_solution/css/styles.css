@@ -16,6 +16,7 @@ div.tabs {
 }
 
 li[ui-sref]{
+  display:inline-block;
   cursor:pointer;
 }
 table {
