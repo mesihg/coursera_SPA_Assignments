@@ -15,7 +15,9 @@ div.tabs {
   font-weight: bold;
 }
 
-
+li[ui-sref]{
+  cursor:pointer;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
