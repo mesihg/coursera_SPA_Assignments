@@ -61,6 +61,9 @@
         <label for="favoriteDish">Favorite Dish</label>
         <input type="text" class="form-control" name="favoriteDish" placeholder="Pick your favorite Dish"
         ng-model="$signUpCtrl.user.favoriteDish">
+        <span ng-if="signUpForm.favoriteDish.$invalid && signUpForm.favoriteDish.$touched">
+          Please enter your favourite dish.
+        </span>
         <br>
       </div>
 
